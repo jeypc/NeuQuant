@@ -260,7 +260,7 @@ func (n *NeuQuant) buildIndex() {
 }
 
 // Search for best matching color
-func (n *NeuQuant) indexSearch(b, g, r, a uint32) int {
+func (n *NeuQuant) IndexSearch(b, g, r, a uint32) int {
 	bestd := uint32(math.MaxUint32)
 	best := 0
 	i := n.Netindex[int(g)]
